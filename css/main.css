@@ -16,6 +16,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
 }
 
+h1{
+     word-wrap: break-word;
+     -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+     -ms-hyphens: auto;
+     -o-hyphens: auto;
+     hyphens: auto;
+}
+
 /* Paragraph & Typographic */
 p {
   line-height: 28px;
@@ -66,6 +75,38 @@ a:after {
   text-align: justify;
 }
 
+ul {
+  list-style-position: inside;
+  padding-left:0;
+}
+.item{
+  padding-left: 15px;
+}
+
+.skills{
+  /*background: LightGrey;*/
+  background: Gainsboro;
+}
+
+.img-responsive{
+			border:2px solid Gray;
+			box-shadow: 10px 10px 5px #ccc;
+			-moz-box-shadow: 10px 10px 5px #ccc;
+			-webkit-box-shadow: 10px 10px 5px #ccc;
+			-khtml-box-shadow: 10px 10px 5px #ccc;
+      /* opacity: 0.75;
+      filter: alpha(opacity=50); */
+      -webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+
+}
+
+.img-responsive:hover {
+      /* opacity: 1.0;
+      filter: alpha(opacity=100); /* For IE8 and earlier */
+      -webkit-transform:scale(1.2);
+      transform:scale(1.07);
+}
 /*---------------------------------------------------
   SECTION WRAPS
 ---------------------------------------------------*/
@@ -73,7 +114,7 @@ a:after {
 /* Header Wrap */
 .header {
   background: #1CBCAD;
-  background: url(../images/header-bg.jpg) no-repeat center top;
+  background: url(../images/10.jpg) no-repeat center top;
   padding-top:140px;
   text-align:center;
   background-attachment: relative;
@@ -112,10 +153,12 @@ a:after {
 .about {
   background: #2c3e50;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   color: white;
 }
-
+h5{
+  font-weight: bold;
+}
 .about h5, p {
   color: white;
 }
@@ -129,8 +172,7 @@ a:after {
 
 .footer {
   background: #2f2f2f;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 20px;
 }
 
 .footer p {
@@ -181,9 +223,9 @@ sm {
   font-size: 12px;
 }
 
-.desc .col-lg-3 {
+/*.desc .col-lg-3 {
   text-transform: uppercase;
-}
+}*/
 
 .container .row p.tight {
   margin-bottom: 10px;
